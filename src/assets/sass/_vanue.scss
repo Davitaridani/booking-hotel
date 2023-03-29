@@ -1,0 +1,95 @@
+@import "globals";
+@import "variables";
+@import "mixin";
+
+.sect-vanue {
+	.container {
+		.row {
+			.img-vanue-1 {
+				overflow: hidden;
+				position: relative;
+				img:nth-child(1) {
+					cursor: pointer;
+					margin-bottom: 20px;
+					transition: all .5s ease-in-out;
+					&:hover {
+						transform:  scale(1.2);
+					}
+				}
+				img:nth-child(2) {
+					width: 100px;
+					position: relative;
+					z-index: 99;
+					float: right;
+				}
+			}
+
+			.img-vanue-2 {
+				overflow: hidden;
+				position: relative;
+				img:nth-child(1) {
+					z-index: 999;
+					position: relative;
+					margin-bottom: 30px;
+				}
+				img:nth-child(2) {
+					cursor: pointer;
+					transition: all .5s ease-in-out;
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+			}
+			.items-text-vanue {
+				padding-left: 40px;
+				position: relative;
+				color: #ffff;
+				.title {
+					margin-bottom: 20px;
+					h1 {
+						font-size: 50px;
+					}
+				}
+				.desc {
+					margin-bottom: 40px;
+					h3 {
+						font-size: 20px;
+						margin-bottom: 20px;
+						color: #EBEBEB;
+						font-weight: 500;
+						letter-spacing: 1.2px;
+					}
+					p {
+						font-size: 15px;
+						font-weight: 300;
+						line-height: 1.4;
+					}
+				}
+				.items-button {
+					column-gap: 12px;
+					svg {
+							font-size: 17px;
+						}
+					.btn-transparent {
+						border: 1px solid $colorPink;
+						padding: 6.5px 20px;
+						color: #fff;
+						border-radius: 5px;
+						font-size: 16px;
+						gap: 7px;
+						
+						@include display-item(flex,center,center)
+					}
+				}
+
+				display: flex;
+				align-items: center;
+				img {
+					position: absolute;
+					bottom: 5vh;
+					right: 0;
+				}
+			}
+		}
+	}
+}

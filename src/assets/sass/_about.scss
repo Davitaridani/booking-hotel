@@ -1,0 +1,86 @@
+@import "globals";
+@import "variables";
+@import "mixin";
+
+.sect-about {
+	.container {
+		.about-info {
+			color: #fff;
+			.title {
+				margin-bottom: 45px;
+				h1 {
+					font-size: 45px;
+					font-weight: 700;
+					margin-bottom: 10px;
+				}
+				p {
+					font-size: 15px;
+					font-weight: 400;
+					letter-spacing: 1px;
+				}
+			}
+			.info-event {
+				margin-bottom: 50px;
+				.items-event {
+					span {
+					
+						background-color: rgba(214, 55, 127, 0.4);
+						@include display-item(flex,center,center);
+						width: 45px;
+						height: 45px;
+						border-radius: 50%;
+						svg {
+							font-size: 25px;
+							color: $colorPink;
+						}
+					}
+					.events {
+						h3 {
+							color: #fff;
+							font-size: 15px;
+							margin-bottom: 5px;
+							letter-spacing: 1.2px;
+						}
+						p {
+							color: #CECECF;
+							font-weight: 400;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+			.items-btn {
+				.learn-more {
+					border: 1px solid #fff  !important;
+					padding: 6px 19px;
+					font-weight: 500;
+					border-radius: 5px;
+					color: #fff;
+				}
+			}
+		}
+		.items-profile {
+			.profile-about-1 {
+				position: relative;
+				img:nth-child(1) {
+					border-radius: 12px;
+				}
+				img:nth-child(2) {
+					position: absolute;
+					bottom: 85px;
+					left: -90px;
+					z-index: -10;
+				}
+			}
+			.profile-about-2 {
+				position: relative;
+				img:nth-child(1) {
+					border-radius: 12px;
+				}
+				img:nth-child(2) {
+					border-radius: 12px;
+				}
+			}
+		}
+	}
+}

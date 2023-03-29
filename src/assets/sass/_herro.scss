@@ -1,0 +1,55 @@
+@import "globals";
+@import "variables";
+@import "mixin";
+
+.herro-banner {
+	display: flex;
+	.container {
+		.herro-text {
+			height: 60vh;
+			width: 920px;
+			margin: 0 auto;
+			text-align: center;
+			h1 {
+				color: #fff;
+				background: linear-gradient(135deg, #5EFCE8 0%, #736EFE 100%);
+				font-size: 75px;
+				letter-spacing: -0.03em;
+				font-weight: 700;
+				line-height: 115px;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin-bottom: 5px;
+			}
+			p {
+				color: $secondary;
+				margin-bottom: 25px;
+			}
+			.date {
+				p {
+					color: #fff;
+					span {
+						font-size: 18px;
+						font-weight: 600;
+						letter-spacing: 1.5px;
+					}
+				}
+			}
+		}
+		.btn-scroll-down {
+			button {
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
+				border-style: dotted;
+				// border-top: #61E8EC;
+				border-width: 1px;
+				border-color: linear-gradient(180deg, #61E8EC 0%, rgba(31, 38, 54, 0) 100%)  !important;
+				span {
+					color: #fff;
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}

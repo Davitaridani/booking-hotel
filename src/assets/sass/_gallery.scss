@@ -1,0 +1,39 @@
+@import "globals";
+@import "variables";
+
+
+.sect-gallery {
+	.container-fluid {
+		.title	 {
+			filter: blur(0);
+			margin-bottom: 50px;
+			position: relative;
+			.img-title-1 {
+				filter: blur(0);
+				position: absolute;
+				left: 35%;
+				bottom: 0;
+				width: 40px;
+				height: 30px;
+			}
+			.img-title-2 {
+				filter: blur(0);
+				position: absolute;
+				right: 10%;
+				top: 0;
+			}
+			h3 {
+				color: #fff;
+				font-size: 40px;
+			}
+		}
+		img {
+			transition: .4s ease-in-out;
+			cursor: pointer;
+			filter: blur(3px);
+			&:hover {
+				filter: blur(0);
+			}
+		}
+	}
+}

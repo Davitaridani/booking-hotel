@@ -1,0 +1,72 @@
+@import "globals";
+@import "variables";
+
+
+.sect-cta {
+	margin-top: 40px;
+	padding: 35px 0 !important;
+	.container {
+		background-color: #E61053;
+		max-width: 90% !important;
+		padding: 0  !important;
+		margin: 0 auto;
+		border-radius: 15px;
+		.cta {
+			padding: 47px 120px;
+			position: relative;
+			.cta-3 {
+
+				img {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translate(-50%, 50%);
+				}
+			}
+			.text {
+				img {
+					position: absolute;
+					object-fit: contain;
+					top: 0;
+					left: 0;
+				}
+				color: #fff;
+				p {
+					margin-bottom: 5px;
+				}
+				h3 {
+					font-size: 30px;
+					letter-spacing: 1.2px;
+				}
+			}
+			.btn-subscribe {
+				background-color: #fff;
+				padding: 5px;
+				border-radius: 50px;
+				column-gap: 45px;
+				img {
+					position: absolute;
+					top: 15px;
+					right: 40px;
+				}
+				input {
+					box-shadow: none;
+					border: 0;
+					background: transparent;
+				}
+				::placeholder {
+					color: rgba(20, 20, 20, 0.3);
+					font-size: 15px;
+				}
+				button {
+					border: 0;
+					background-color:#09080E;
+					color: #fff;
+					border-radius: 20px;
+					padding: 8px 20px;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+} 

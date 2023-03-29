@@ -1,0 +1,36 @@
+@import "globals";
+@import "variables";
+
+.sect-meet-leard {
+	background: url("../img/bg-meet-up.jpg") center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.container {
+		h3 {
+			color: #fff;
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 1.4;
+			margin-bottom: 50px;
+		}
+		.card {
+			background: rgba(21, 26, 37, 0.8);
+			gap: 10px;
+			border-radius: 0 !important;
+			width: 18% !important;
+			.info {
+				padding: 50px;
+				color: #fff;
+				text-align: center;
+				span {
+					color: $colorPink;
+					font-size: 20px;
+					margin-bottom: 5px;
+				}
+				p {
+					font-size: 17px;
+				}
+			}
+		}
+	}
+}

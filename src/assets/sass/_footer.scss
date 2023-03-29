@@ -1,0 +1,50 @@
+@import "globals";
+@import "variables";
+
+.footer {
+	.container {
+		max-width: 80% !important;
+		margin: 0 auto;
+		padding: 0 25px;
+		.row {
+			.title {
+				margin-bottom: 30px;
+				img {
+					width: 225px;
+					height: 50px;
+					margin-bottom: 15px;
+				}
+				p {
+					color: #8C8C8C;
+					font-size: 13px;
+					letter-spacing: 1px;
+					width: 80%;
+				}
+			}
+			.icon {
+				column-gap: 7px;
+				img {
+					height: 35px;
+					width: 35px;
+				}
+			}
+		}
+		.item-link {
+			.title {
+				h3 {
+					font-size: 17px;
+					color: #fff;
+				}
+			}
+		} 
+		.text-copyright {
+			border-top: 1.5px solid #8C8C8C;
+			margin: 18px 0 25px;
+			p {
+				margin-top: 15px;
+				color: #fff;
+				font-size: 15px;
+			}
+		}
+	}
+}

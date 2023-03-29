@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixin";
+
+.btns {
+	@include display-item(flex, center, center);
+	background-color: $colorPink ;
+	color: #fff;
+	column-gap: 2px;
+	padding: 6px 19px;
+	font-weight: 500;
+	border: 0;
+	border-radius: 5px;
+	transition: all .15s ease-in-out;
+	&:hover {
+		background-color: #e1649cec !important;
+	}
+	span {
+		padding-right: 2px;
+	}
+}

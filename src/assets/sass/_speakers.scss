@@ -1,0 +1,63 @@
+@import "globals";
+@import "variables";
+
+
+.sect-speakers {
+	.container {
+		.row {
+			.items-speakers {
+					position: relative;
+					overflow: hidden;
+				img {
+					cursor: pointer;
+					border-top-right-radius: 50px;
+					border-top-left-radius: 50px;
+					transition: all .5s ease-in-out;
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+				.info-speakers {
+					position: absolute;
+					z-index: 2;
+					bottom: 15px;
+					left: 25px;
+					h3 {
+						font-size: 20px;
+						color: #fff;
+						margin-bottom: 0;
+					}
+					p {
+						color: $secondary;
+						font-size: 15px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+			.info-text-speakers {
+				color: #fff;
+				margin-left: 40px;
+				position: relative;
+				img {
+					left: 55%;
+					position: absolute;
+				}
+				h3 {
+					font-size: 50px;
+					margin-bottom: 15px;
+				}
+				p {
+					font-size: 16px;
+					margin-bottom: 40px;
+				}
+				button {
+					border: 1px solid $colorPink;
+					padding: 8px 20px;
+					color: #fff;
+					border-radius: 5px;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
