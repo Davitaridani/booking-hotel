@@ -6,30 +6,43 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	.container {
+		position: relative;
 		h3 {
 			color: #fff;
 			font-weight: 700;
 			font-size: 60px;
 			line-height: 1.4;
 			margin-bottom: 50px;
+			padding-left: 190px !important;
 		}
-		.card {
-			background: rgba(21, 26, 37, 0.8);
-			gap: 10px;
-			border-radius: 0 !important;
-			width: 18% !important;
-			.info {
-				padding: 50px;
-				color: #fff;
-				text-align: center;
-				span {
-					color: $colorPink;
-					font-size: 20px;
-					margin-bottom: 5px;
+		.row {
+			padding-left: 200px !important;
+			.card {
+				background: rgba(21, 26, 37, 0.8);
+				gap: 10px;
+				border-radius: 0 !important;
+				width: 23% !important;
+				.info {
+					padding: 50px;
+					color: #fff;
+					text-align: center;
+					span {
+						color: $colorPink;
+						font-size: 25px;
+						margin-bottom: 10px;
+					}
+					p {
+						font-size: 17px;
+					}
 				}
-				p {
-					font-size: 17px;
-				}
+			}
+		}
+		.img-arrow-up{
+			img {
+				left: -0;
+				bottom: 52px;
+				position: absolute;
+				transform: rotate(-90deg);
 			}
 		}
 	}

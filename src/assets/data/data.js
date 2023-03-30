@@ -44,6 +44,22 @@ import galeri12 from "../img/galeri/galeri12.jpg";
 import galeri13 from "../img/galeri/galeri13.jpg";
 import galeri14 from "../img/galeri/galeri14.jpg";
 
+import person1 from "../../assets/img/person/person-1.jpg";
+import person2 from "../../assets/img/person/person-2.jpg";
+import person3 from "../../assets/img/person/person-3.jpg";
+import person4 from "../../assets/img/person/person-4.jpg";
+import person5 from "../../assets/img/person/person-5.jpg";
+import person6 from "../../assets/img/person/person-6.jpg";
+import person7 from "../../assets/img/person/person-7.jpg";
+import person8 from "../../assets/img/person/person-8.jpg";
+import person9 from "../../assets/img/person/person-9.jpg";
+import person10 from "../../assets/img/person/person-10.jpg";
+import person11 from "../../assets/img/person/person-11.jpg";
+import person12 from "../../assets/img/person/person-12.jpg";
+import person13 from "../../assets/img/person/person-13.jpg";
+import person14 from "../../assets/img/person/person-14.jpg";
+import person15 from "../../assets/img/person/person-15.jpg";
+
 export const dataMeetLearn = [
   { id: "01", icon: <FaMicrophone />, title: "40+ Speaker" },
   { id: "02", icon: <MdOutlineMonitor />, title: "60+ Session" },
@@ -193,4 +209,56 @@ export const images = [
   { src: galeri12 },
   { src: galeri13 },
   { src: galeri14 },
+];
+
+export const eventSchedules = [
+  {
+    time: "8.00 AM",
+    title: "Entry Registration & Continental Breakfast",
+    detailTime: "08:00 AM - 09:00 AM",
+    location: "Dining Hall",
+
+    dataPerson: [{ name: "Davit" }, { umur: 22 }],
+  },
+  {
+    time: "9.00 AM",
+    title: "Introduction Creative Design | Carrier Guideline",
+    detailTime: "09:00 AM - 10:00 AM",
+    location: "Hall of Fame 01",
+    // dataPerson: [
+    //   { img: person1 },
+    //   { img: person2 },
+    //   { img: person3 },
+    //   { img: person4 },
+    //   { img: person5 },
+    //   { img: person6 },
+    // ],
+  },
+  {
+    time: "10.00 AM",
+    title: "Introduction UX Design | Carrier Guideline",
+    detailTime: "10:00 AM - 12:00 PM",
+    location: "Hall of Fame 01",
+    // dataPerson: [
+    //   { img: person7 },
+    //   { img: person8 },
+    //   { img: person9 },
+    //   { img: person10 },
+    // ],
+  },
+
+  {
+    time: "13.00 PM",
+    title: "Lunch Break",
+    detailTime: "12:00 PM - 02:00 PM",
+    location: "Dining Hall",
+    // dataPerson: [
+    //   { img: person11 },
+    //   { img: person3 },
+    //   { img: person7 },
+    //   { img: person2 },
+    //   { img: person1 },
+    //   { img: person13 },
+    // ],
+  },
 ];

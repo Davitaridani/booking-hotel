@@ -1,7 +1,123 @@
 @import "globals";
 @import "variables";
+@import "mixin";
 
 
 .sect-schedule {
 	background-color: #fff;
+	.container {
+		max-width: 80% !important;
+		.title {
+			.text {
+				display: flex;
+				align-items: center;
+				margin-left: 12rem;
+				img {
+					margin-right: 20px;
+				}
+				h3 {
+					font-size: 50px;
+					font-weight: 700;
+				}
+			}
+			.items-btn-checked {
+				.btn-checked {
+					margin-left: 7px;
+					.btn-check:checked+.btn {
+						background-color: #000;
+						color: #fff;
+						font-weight: 500;
+					}
+					.btn {
+						border: 1px solid #E0E0E0;
+						color: #0C0C0C;
+					}
+				}
+			}
+		}
+		.row {
+			margin-top: 50px;
+			.card-info {
+				border: 1px solid #e4e4e4;
+				padding: 15px;
+				border-radius: 5px;
+				margin-top: 10px;
+				h3 {
+					color: #000;
+					font-size: 20px;
+				}
+				p {
+				margin-bottom: 20px;
+					span {
+						@include display-item(flex,center,center);
+						font-size: 14px;
+						color: #676767;
+						column-gap: 4px;
+						padding-right: 15px;
+						letter-spacing: 0;
+						svg {
+							color: #676767;
+						}
+					}
+				}
+				.btns {
+					border: 1px solid $colorPink;
+					background-color: transparent !important;
+					color: #363636;
+					font-size: 15px;
+					transition: all .3s ease-in-out ;
+					&:hover {
+						background-color: $colorPink !important;
+						color: #fff;
+					}
+				}
+				.img-person {
+					position: relative;
+					// width: 80%;
+					img {
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						// left: 28px;
+					}
+
+
+					// img:nth-child(1) {
+					// 	position: relative;
+					// 	width: 40px;
+					// 	height: 40px;
+					// 	border-radius: 50%;
+					// 	left: 28px;
+					// }
+					// img:nth-child(2) {
+					// 	position: relative;
+					// 	width: 40px;
+					// 	height: 40px;
+					// 	border-radius: 50%;
+					// 	left: 21px;
+					// }
+					// img:nth-child(3) {
+					// 	position: relative;
+					// 	width: 40px;
+					// 	height: 40px;
+					// 	border-radius: 50%;
+					// 	left: 14px;
+					// }
+					// img:nth-child(4) {
+					// 	position: relative;
+					// 	width: 40px;
+					// 	height: 40px;
+					// 	border-radius: 50%;
+					// 	left: 7px;
+					// }
+					// img:nth-child(5) {
+					// 	position: relative;
+					// 	width: 40px;
+					// 	height: 40px;
+					// 	border-radius: 50%;
+					// }
+				}
+			}
+		}
+	}
 }

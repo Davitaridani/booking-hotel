@@ -272,31 +272,44 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.sect-meet-leard .container {
+  position: relative;
+}
 .sect-meet-leard .container h3 {
   color: #fff;
   font-weight: 700;
   font-size: 60px;
   line-height: 1.4;
   margin-bottom: 50px;
+  padding-left: 190px !important;
 }
-.sect-meet-leard .container .card {
+.sect-meet-leard .container .row {
+  padding-left: 200px !important;
+}
+.sect-meet-leard .container .row .card {
   background: rgba(21, 26, 37, 0.8);
   gap: 10px;
   border-radius: 0 !important;
-  width: 18% !important;
+  width: 23% !important;
 }
-.sect-meet-leard .container .card .info {
+.sect-meet-leard .container .row .card .info {
   padding: 50px;
   color: #fff;
   text-align: center;
 }
-.sect-meet-leard .container .card .info span {
+.sect-meet-leard .container .row .card .info span {
   color: #D6377F;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
-.sect-meet-leard .container .card .info p {
+.sect-meet-leard .container .row .card .info p {
   font-size: 17px;
+}
+.sect-meet-leard .container .img-arrow-up img {
+  left: 0;
+  bottom: 52px;
+  position: absolute;
+  transform: rotate(-90deg);
 }
 
 body {
@@ -465,6 +478,82 @@ section {
 
 .sect-schedule {
   background-color: #fff;
+}
+.sect-schedule .container {
+  max-width: 80% !important;
+}
+.sect-schedule .container .title .text {
+  display: flex;
+  align-items: center;
+  margin-left: 12rem;
+}
+.sect-schedule .container .title .text img {
+  margin-right: 20px;
+}
+.sect-schedule .container .title .text h3 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.sect-schedule .container .title .items-btn-checked .btn-checked {
+  margin-left: 7px;
+}
+.sect-schedule .container .title .items-btn-checked .btn-checked .btn-check:checked + .btn {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+}
+.sect-schedule .container .title .items-btn-checked .btn-checked .btn {
+  border: 1px solid #E0E0E0;
+  color: #0C0C0C;
+}
+.sect-schedule .container .row {
+  margin-top: 50px;
+}
+.sect-schedule .container .row .card-info {
+  border: 1px solid #e4e4e4;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.sect-schedule .container .row .card-info h3 {
+  color: #000;
+  font-size: 20px;
+}
+.sect-schedule .container .row .card-info p {
+  margin-bottom: 20px;
+}
+.sect-schedule .container .row .card-info p span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #676767;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  padding-right: 15px;
+  letter-spacing: 0;
+}
+.sect-schedule .container .row .card-info p span svg {
+  color: #676767;
+}
+.sect-schedule .container .row .card-info .btns {
+  border: 1px solid #D6377F;
+  background-color: transparent !important;
+  color: #363636;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.sect-schedule .container .row .card-info .btns:hover {
+  background-color: #D6377F !important;
+  color: #fff;
+}
+.sect-schedule .container .row .card-info .img-person {
+  position: relative;
+}
+.sect-schedule .container .row .card-info .img-person img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 body {

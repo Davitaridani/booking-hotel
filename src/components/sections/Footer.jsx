@@ -3,6 +3,7 @@ import Cta from "./Cta"
 import { iconFooter, footerLinks } from "../../assets/data/data";
 // import { footerLinks } from "../../assets/data/data";
 import logo from "../../assets/img/logo.png";
+import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
 const Footer = () => {
@@ -35,7 +36,7 @@ const Footer = () => {
 									{/* {
 										footerLinks.links.map((itemLink, index) => (
 											<li key={index}>
-												<a href="" >{itemLink.name}</a>
+												<Link to="" >{itemLink.name}</Link>
 											</li>
 										))
 									} */}
