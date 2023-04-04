@@ -1,6 +1,7 @@
 @import "globals";
 @import "variables";
 @import "mixin";
+@import "breakpoint";
 
 .herro-banner {
 	display: flex;
@@ -55,6 +56,25 @@
 				span {
 					color: #fff;
 					font-size: 27px;
+				}
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.herro-banner {
+		.container {
+			.herro-text {
+				height: auto;
+				width: auto;
+				h1 {
+					font-size: 40px;
+					line-height: 1.4;
+					margin-bottom: 20px;
+				}
+				.date {
+					margin-bottom: 30px;
 				}
 			}
 		}

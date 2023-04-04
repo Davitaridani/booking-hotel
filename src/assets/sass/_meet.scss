@@ -1,5 +1,6 @@
 @import "globals";
 @import "variables";
+@import "breakpoint";
 
 .sect-meet-leard {
 	background: url("../img/bg-meet-up.jpg") center;
@@ -43,6 +44,36 @@
 				bottom: 52px;
 				position: absolute;
 				transform: rotate(-90deg);
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect-meet-leard {
+		.container {
+			position: relative;
+			h3 {
+				font-size: 40px;
+				line-height: 1.4;
+				margin-bottom: 50px;
+				padding-left: 0 !important;
+			}
+			.row {
+				padding-left: 0 !important;
+				gap: 20px !important;
+				.card {
+					width: auto !important;
+					margin: auto;
+					.info {
+						span {
+							font-size: 25px;
+						}
+						p {
+							margin-top: 5px;
+						}
+					}
+				}
 			}
 		}
 	}

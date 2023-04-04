@@ -1,4 +1,5 @@
 @import "variables";
+@import "breakpoint";
 
 body {
 	background-color: #151A25;
@@ -38,4 +39,10 @@ section {
 ::selection {
 	background-color: $colorPink;
 	color: #fff;
+}
+
+@include responsive(mobile) {
+	p {
+		font-size: 15px !important;
+	}
 }

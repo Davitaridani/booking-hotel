@@ -1,5 +1,6 @@
 @import "globals";
 @import "variables";
+@import "breakpoint";
 
 .navbar {
 	.container {
@@ -30,28 +31,39 @@
 	}
 }
 
+@include responsive(mobile) {
+	.navbar {
+		.container {
+			a {
+				img {
+					width: 220px;
+				}
+			}
+			ul {
+				li {
+					display: none;
+					transition: all .5s ease-in;
+					padding: 0 30px 0 0;
+					a {
+						color: #fff;
+						font-weight: 400;
+						font-size: 16px;
+						letter-spacing: 1px;
+						transition: all .3s ease-in-out;
+						&:hover {
+							color: $colorPink;
+						}
+					}
+				}
+			}
+			.btn-ticket {
+					display: none;
 
-@mixin responsive($breakpoint) {
-	@if $breakpoint==mobile {
-		@media screen and (max-width: 767px) {
-			@content;
-		}
-	}
-	@else if $breakpoint==ipad {
-		@media screen and (min-width: 768px) and(max-width: 979px) {
-			@content;
-		}
-	}
-	@else if $breakpoint==leptop {
-		@media screen and (min-width: 980px) and (max-width: 1024px) {
-			@content;
-		}
-	}
-	@else if $breakpoint==dekstop {
-		@media screen and (min-width: 1025px) and (max-width: 1280px) {
-			@content;
+				padding-left: 20px;
+			}
 		}
 	}
 }
+
 
 
