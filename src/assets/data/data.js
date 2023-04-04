@@ -142,22 +142,27 @@ export const dataSponsor = [
 export const iconFooter = [
   {
     id: "01",
+    link: "https://www.facebook.com/",
     icon: iconFb,
   },
   {
     id: "02",
+    link: "https://www.instagram.com/",
     icon: iconIg,
   },
   {
     id: "03",
+    link: "https://www.linkedin.com/",
     icon: iconLinked,
   },
   {
     id: "04",
+    link: "https://twitter.com/",
     icon: iconTwitter,
   },
   {
     id: "05",
+    link: "https://www.youtube.com/",
     icon: iconYt,
   },
 ];
@@ -165,9 +170,9 @@ export const iconFooter = [
 export const footerLinks = [
   {
     title: "About",
-    links: [
+    link: [
       { name: "About Us" },
-      { name: "Ticker" },
+      { name: "Ticket" },
       { name: "Speaker" },
       { name: "Schedule" },
       { name: "In Press" },
@@ -175,7 +180,7 @@ export const footerLinks = [
   },
   {
     title: "Support",
-    links: [
+    link: [
       { name: "Contact Us" },
       { name: "Register" },
       { name: "Sponsor" },
@@ -185,7 +190,7 @@ export const footerLinks = [
   },
   {
     title: "FAQ",
-    links: [
+    link: [
       { name: "Account" },
       { name: "Privacy Policy" },
       { name: "How its works" },
@@ -217,34 +222,38 @@ export const eventSchedules = [
     title: "Entry Registration & Continental Breakfast",
     detailTime: "08:00 AM - 09:00 AM",
     location: "Dining Hall",
-
-    dataPerson: [{ name: "Davit" }, { umur: 22 }],
+    dataPerson: [
+      { img: person1 },
+      { img: person2 },
+      { img: person3 },
+      { img: person4 },
+      { img: person5 },
+    ],
   },
   {
     time: "9.00 AM",
     title: "Introduction Creative Design | Carrier Guideline",
     detailTime: "09:00 AM - 10:00 AM",
     location: "Hall of Fame 01",
-    // dataPerson: [
-    //   { img: person1 },
-    //   { img: person2 },
-    //   { img: person3 },
-    //   { img: person4 },
-    //   { img: person5 },
-    //   { img: person6 },
-    // ],
+    dataPerson: [
+      { img: person7 },
+      { img: person8 },
+      { img: person9 },
+      { img: person10 },
+      { img: person11 },
+    ],
   },
   {
     time: "10.00 AM",
     title: "Introduction UX Design | Carrier Guideline",
     detailTime: "10:00 AM - 12:00 PM",
     location: "Hall of Fame 01",
-    // dataPerson: [
-    //   { img: person7 },
-    //   { img: person8 },
-    //   { img: person9 },
-    //   { img: person10 },
-    // ],
+    dataPerson: [
+      { img: person12 },
+      { img: person13 },
+      { img: person14 },
+      { img: person15 },
+    ],
   },
 
   {
@@ -252,13 +261,15 @@ export const eventSchedules = [
     title: "Lunch Break",
     detailTime: "12:00 PM - 02:00 PM",
     location: "Dining Hall",
-    // dataPerson: [
-    //   { img: person11 },
-    //   { img: person3 },
-    //   { img: person7 },
-    //   { img: person2 },
-    //   { img: person1 },
-    //   { img: person13 },
-    // ],
+    dataPerson: [
+      { img: person11 },
+      { img: person3 },
+      { img: person7 },
+      { img: person2 },
+      { img: person1 },
+      { img: person13 },
+      { img: person6 },
+      { img: person9 },
+    ],
   },
 ];

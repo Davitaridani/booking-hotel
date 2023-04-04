@@ -16,9 +16,9 @@ const Herro = () => {
 						</p>
 					</div>
 				</div>
-				<div className="btn-scroll-down d-block text-center">
-					<button className="bg-transparent border-0">
-						<span className="d-flex align-items-center justify-content-center">
+				<div className="btn-scroll-down text-center ">
+					<button className="flex loader border-0 bounce">
+						<span className="d-flex align-items-center justify-content-center ">
 							<BiDownArrowAlt />
 						</span>
 					</button>

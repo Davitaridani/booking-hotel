@@ -8,6 +8,7 @@
 			h3 {
 				color: #151A25;
 				font-size: 40px;
+				font-weight: 600;
 				margin-bottom: 10px;
 			}
 			width: 35%;
@@ -22,6 +23,18 @@
 					object-fit: contain;
 					margin-bottom: 20px;
 				}
+			}
+		}
+		button {
+			border: 1px solid #D6377F;
+			padding: 6.5px 20px;
+			border-radius: 5px;
+			font-size: 16px;
+			color: #363636;
+			transition: all .15s ease-in-out;
+			&:hover {
+				background-color: #d54b89 !important;
+				color: #fff;
 			}
 		}
 	}

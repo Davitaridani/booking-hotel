@@ -3,4 +3,45 @@
 
 .sect-event {
 	background-color: #fff;
+	.container {
+		.title {
+			color: #151A25;
+			margin-bottom: 40px;
+			p {
+				font-size: 20px;
+				margin-bottom: 5px;
+			}
+			h3 {
+				font-weight: 700;
+				letter-spacing: -1px;
+				font-size: 45px;
+			}
+		}
+		.row {
+			.items-card {
+				border: 1px solid #25232A;
+				border-radius: 8px;
+				padding: 60px 20px 40px;
+				transition:  .4s ease-in-out;
+				img {
+					width: 50px;
+					height: 50px;
+					margin-bottom: 10px;
+					object-fit: contain;
+				}
+				.card-info {
+					h3 {
+						margin-bottom: 10px;
+						font-size: 22px;
+						color: #25232A;
+					}
+					p {
+						font-size: 14px;
+						color:#676767;
+						line-height: 1.3;
+					}
+				}
+			}
+		}
+	}
 }

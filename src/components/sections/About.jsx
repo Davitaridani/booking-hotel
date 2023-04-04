@@ -46,11 +46,9 @@ const About = () => {
 							</div>
 							<div className="items-btn d-flex align-items-center gap-3">
 								<Button />
-
 								<button className='learn-more bg-transparent'>Learn More</button>
 							</div>
 						</div>
-
 					</Col>
 
 					<Col lg="6" className='items-profile d-flex gap-3'>
@@ -58,15 +56,12 @@ const About = () => {
 							<img src={imgProfile1} alt="profile 1" className='' />
 							<img src={imgShape} alt="" />
 						</div>
-
 						<div className="profile-about-2">
 							<img src={imgShape2} alt="shape" className='float-end mb-4' />
 							<img src={imgProfile2} alt="profile 1" className='' />
-
 						</div>
 					</Col>
 				</Row>
-
 
 			</Container>
 		</section>

@@ -4,6 +4,7 @@
 .btns {
 	@include display-item(flex, center, center);
 	background-color: $colorPink ;
+	// background: linear-gradient(to right, #cc2b5e, #753a88 )  ;
 	color: #fff;
 	column-gap: 2px;
 	padding: 6px 19px;

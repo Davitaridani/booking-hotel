@@ -30,7 +30,6 @@ const NavbarCompt = () => {
             </li>
           ))}
         </ul>
-
         <div className="btn-ticket">
           <Button />
         </div>

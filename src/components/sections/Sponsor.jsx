@@ -17,6 +17,7 @@ const Sponsor = () => {
 						</Col>
 					))}
 				</Row>
+				<button className="btn bg-transparent mx-auto d-flex justify-content-center">Became a Sponsor</button>
 			</Container>
 		</section>
 	)

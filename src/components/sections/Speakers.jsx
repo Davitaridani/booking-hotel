@@ -8,24 +8,22 @@ const Speakers = () => {
 		<section className="sect-speakers">
 			<Container>
 				<Row>
-					{
-						dataSpeakers.map((item, index) => (
-							<Col lg="3" sm="12" key={index} >
-								<div className="items-speakers">
-									<img src={item.img} alt="" className='img-fluid' />
-									<div className="info-speakers">
-										<h3>{item.name}</h3>
-										<p>{item.jobDesk}</p>
-										<div className="icon-sosmed d-flex gap-1 align-items-center">
-											<img src={item.fb} alt="icon sosmed" />
-											<img src={item.ig} alt="icon sosmed" />
-											<img src={item.linked} alt="icon sosmed" />
-										</div>
+					{dataSpeakers.map((item, index) => (
+						<Col lg="3" sm="12" key={index} >
+							<div className="items-speakers">
+								<img src={item.img} alt="" className='img-fluid' />
+								<div className="info-speakers">
+									<h3>{item.name}</h3>
+									<p>{item.jobDesk}</p>
+									<div className="icon-sosmed d-flex gap-1 align-items-center">
+										<img src={item.fb} alt="icon sosmed" />
+										<img src={item.ig} alt="icon sosmed" />
+										<img src={item.linked} alt="icon sosmed" />
 									</div>
 								</div>
-							</Col>
-						))
-					}
+							</div>
+						</Col>
+					))}
 
 					<Col lg="6" sm="12">
 						<div className="info-text-speakers">

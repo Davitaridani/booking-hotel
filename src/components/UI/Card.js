@@ -2,18 +2,22 @@ import React from "react";
 import { dataCardEvent } from "../../assets/data/data";
 import { Row, Col } from "react-bootstrap";
 
-export const Card = () => {
+const Card = () => {
   return (
-    <Col lg="3" md="6" sm="12">
+    <Row>
       {dataCardEvent.map((item, index) => (
-        <div class="card" key={index}>
-          <img src={item.img} alt="" className="img-fluid" />
-          <div className="card-info">
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+        <Col lg="3" md="6" sm="12" className="">
+          <div class="items-card text-center h-100" key={index}>
+            <img src={item.img} alt="" className="img-fluid" />
+            <div className="card-info">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
           </div>
-        </div>
+        </Col>
       ))}
-    </Col>
+    </Row>
   );
 };
+
+export default Card;

@@ -2,7 +2,6 @@
 @import "variables";
 @import "mixin";
 
-
 .sect-schedule {
 	background-color: #fff;
 	.container {
@@ -73,49 +72,11 @@
 				}
 				.img-person {
 					position: relative;
-					// width: 80%;
 					img {
 						width: 40px;
 						height: 40px;
 						border-radius: 50%;
-						// left: 28px;
 					}
-
-
-					// img:nth-child(1) {
-					// 	position: relative;
-					// 	width: 40px;
-					// 	height: 40px;
-					// 	border-radius: 50%;
-					// 	left: 28px;
-					// }
-					// img:nth-child(2) {
-					// 	position: relative;
-					// 	width: 40px;
-					// 	height: 40px;
-					// 	border-radius: 50%;
-					// 	left: 21px;
-					// }
-					// img:nth-child(3) {
-					// 	position: relative;
-					// 	width: 40px;
-					// 	height: 40px;
-					// 	border-radius: 50%;
-					// 	left: 14px;
-					// }
-					// img:nth-child(4) {
-					// 	position: relative;
-					// 	width: 40px;
-					// 	height: 40px;
-					// 	border-radius: 50%;
-					// 	left: 7px;
-					// }
-					// img:nth-child(5) {
-					// 	position: relative;
-					// 	width: 40px;
-					// 	height: 40px;
-					// 	border-radius: 50%;
-					// }
 				}
 			}
 		}

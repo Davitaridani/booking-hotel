@@ -2,7 +2,6 @@
 @import "variables";
 
 .navbar {
-	
 	.container {
 		a {
 			img {
@@ -15,10 +14,13 @@
 				padding: 0 30px 0 0;
 				a {
 					color: #fff;
-					font-weight: 300;
+					font-weight: 400;
 					font-size: 16px;
 					letter-spacing: 1px;
-					transition: all .5s ease-in-out;
+					transition: all .3s ease-in-out;
+					&:hover {
+						color: $colorPink;
+					}
 				}
 			}
 		}

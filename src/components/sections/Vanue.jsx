@@ -35,7 +35,6 @@ const Vanue = () => {
 								<button className="bg-transparent  btn-transparent"><FaBoxes /> Virtual Tour</button>
 							</div>
 						</div>
-
 						<img src={imgCircle} alt="" />
 					</Col>
 				</Row>

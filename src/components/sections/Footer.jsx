@@ -1,15 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap"
 import Cta from "./Cta"
 import { iconFooter, footerLinks } from "../../assets/data/data";
-// import { footerLinks } from "../../assets/data/data";
 import logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 
-import React, { useState } from "react";
 const Footer = () => {
-
-	const [state, setstate] = useState(footerLinks)
-	// console.log(state);
 
 	return (
 		<footer className="footer">
@@ -23,7 +18,9 @@ const Footer = () => {
 						</div>
 						<div className="icon d-flex align-items-center" >
 							{iconFooter.map(item => (
-								<img src={item.icon} alt="" className="" key={item.id} />
+								<a href={item.link} target="_blank" rel="noreferrer">
+									<img src={item.icon} alt="" className="" key={item.id} />
+								</a>
 							))}
 						</div>
 					</Col>
@@ -33,20 +30,17 @@ const Footer = () => {
 							<div className="title" key={index}>
 								<h3>{item.title}</h3>
 								<ul>
-									{/* {
-										footerLinks.links.map((itemLink, index) => (
-											<li key={index}>
-												<Link to="" >{itemLink.name}</Link>
-											</li>
-										))
-									} */}
+									{item.link.map((item, index) => (
+										<li key={index}>
+											<Link to="" className="text-white">{item.name}</Link>
+										</li>
+									))}
 								</ul>
 							</div>
 						</Col>
-					))
-					}
+					))}
+
 				</Row>
-				{/* <hr /> */}
 				<div className="text-copyright text-center">
 					<p>Copyright © Website By Ahmat Davit 2023. All rights reserved.</p>
 				</div>
