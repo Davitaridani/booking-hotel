@@ -36,14 +36,14 @@ const Schedule = () => {
 				<Row>
 					{eventSchedules.map(item => (
 						<>
-							<Col lg="2" className='d-flex align-items-center justify-content-end'>
-								<li className=''>
+							<Col lg="2" className='text-date d-flex align-items-center justify-content-end '>
+								<li>
 									{item.time}
 								</li>
 							</Col>
-							<Col lg="10" className=''>
+							<Col lg="10">
 								<div className="card-info d-flex align-items-center justify-content-between">
-									<div className=''>
+									<div className='w-75'>
 										<h3>{item.title}</h3>
 										<p className='d-flex align-items-center justify-content-start'>
 											<span><BsStopwatch />{item.detailTime}</span>

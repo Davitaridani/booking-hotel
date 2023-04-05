@@ -48,6 +48,9 @@ section {
   p {
     font-size: 15px !important;
   }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
 }
 body {
   background-color: #151A25;
@@ -98,6 +101,9 @@ section {
 @media screen and (max-width: 767px) {
   p {
     font-size: 15px !important;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
   }
 }
 .navbar .container a img {
@@ -215,6 +221,9 @@ section {
 @media screen and (max-width: 767px) {
   p {
     font-size: 15px !important;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
   }
 }
 .herro-banner {
@@ -353,6 +362,9 @@ section {
   p {
     font-size: 15px !important;
   }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
 }
 .sect-meet-leard {
   background: url("../img/bg-meet-up.jpg") center;
@@ -474,6 +486,9 @@ section {
   p {
     font-size: 15px !important;
   }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
 }
 .sect-about .container .about-info {
   color: #fff;
@@ -547,6 +562,71 @@ section {
   border-radius: 12px;
 }
 
+@media screen and (max-width: 767px) {
+  .sect-about .container .about-info .title {
+    margin-bottom: 45px;
+  }
+  .sect-about .container .about-info .title h1 {
+    font-size: 40px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  .sect-about .container .about-info .info-event {
+    margin-bottom: 50px;
+    gap: 10px !important;
+    justify-content: space-between;
+  }
+  .sect-about .container .about-info .info-event .items-event span {
+    width: 35px;
+    height: 28px;
+  }
+  .sect-about .container .about-info .info-event .items-event span svg {
+    font-size: 14px;
+  }
+  .sect-about .container .about-info .info-event .items-event .events h3 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .sect-about .container .about-info .info-event .items-event .events p {
+    font-size: 13px !important;
+  }
+  .sect-about .container .about-info .items-btn {
+    margin-bottom: 50px;
+  }
+  .sect-about .container .about-info .items-btn .learn-more {
+    padding: 5px 17px;
+  }
+  .sect-about .container .items-profile .profile-about-1 {
+    position: relative;
+    display: flex;
+    justify-content: start;
+  }
+  .sect-about .container .items-profile .profile-about-1 img:nth-child(1) {
+    width: 80%;
+  }
+  .sect-about .container .items-profile .profile-about-1 img:nth-child(2) {
+    position: absolute;
+    bottom: 55px;
+    left: auto;
+    z-index: -10;
+    transform: rotate(180deg);
+    right: 0;
+  }
+  .sect-about .container .items-profile .profile-about-2 {
+    position: relative;
+    margin-top: 50px;
+  }
+  .sect-about .container .items-profile .profile-about-2 img:nth-child(1) {
+    border-radius: 12px;
+    margin-bottom: 13px !important;
+  }
+  .sect-about .container .items-profile .profile-about-2 img:nth-child(2) {
+    border-radius: 15px;
+    float: right;
+    display: flex;
+    width: 80%;
+  }
+}
 body {
   background-color: #151A25;
   font-family: "Satoshi", sans-serif;
@@ -596,6 +676,9 @@ section {
 @media screen and (max-width: 767px) {
   p {
     font-size: 15px !important;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
   }
 }
 .sect-schedule {
@@ -678,6 +761,74 @@ section {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 767px) {
+  .sect-schedule .container {
+    max-width: 100% !important;
+  }
+  .sect-schedule .container .title .text {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .sect-schedule .container .title .text img {
+    margin-right: 10px;
+    width: 28px;
+    height: 20px;
+  }
+  .sect-schedule .container .title .text h3 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  .sect-schedule .container .title .items-btn-checked .btn-checked {
+    margin-left: 7px;
+  }
+  .sect-schedule .container .title .items-btn-checked .btn-checked .btn {
+    padding: 5px 7px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .sect-schedule .container .row {
+    margin-top: 50px;
+  }
+  .sect-schedule .container .row .text-date {
+    justify-content: start !important;
+  }
+  .sect-schedule .container .row .text-date li {
+    font-size: 15px;
+  }
+  .sect-schedule .container .row .card-info {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px 0 30px;
+    overflow-x: scroll;
+  }
+  .sect-schedule .container .row .card-info h3 {
+    font-size: 18px;
+  }
+  .sect-schedule .container .row .card-info p {
+    margin-bottom: 20px;
+  }
+  .sect-schedule .container .row .card-info p span {
+    font-size: 12px;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+    padding-right: 5px;
+  }
+  .sect-schedule .container .row .card-info p span svg {
+    font-size: 22px;
+  }
+  .sect-schedule .container .row .card-info .btns {
+    color: #363636;
+    font-size: 14px;
+  }
+  .sect-schedule .container .row .card-info .img-person {
+    position: relative;
+  }
+  .sect-schedule .container .row .card-info .img-person img {
+    width: 30px;
+    height: 30px;
+  }
+}
 body {
   background-color: #151A25;
   font-family: "Satoshi", sans-serif;
@@ -727,6 +878,9 @@ section {
 @media screen and (max-width: 767px) {
   p {
     font-size: 15px !important;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
   }
 }
 .sect-speakers .container .row .items-speakers {
@@ -833,6 +987,9 @@ section {
   p {
     font-size: 15px !important;
   }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
 }
 .sect-event {
   background-color: #fff;
@@ -923,6 +1080,9 @@ section {
 @media screen and (max-width: 767px) {
   p {
     font-size: 15px !important;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
   }
 }
 .sect-vanue .container .row .img-vanue-1 {
@@ -1061,6 +1221,9 @@ section {
   p {
     font-size: 15px !important;
   }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
 }
 .sect-sponsor {
   background-color: #fff;
@@ -1146,6 +1309,9 @@ section {
   p {
     font-size: 15px !important;
   }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
 }
 .sect-gallery .container-fluid .title {
   filter: blur(0);
@@ -1228,6 +1394,9 @@ section {
 @media screen and (max-width: 767px) {
   p {
     font-size: 15px !important;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
   }
 }
 .sect-cta {
@@ -1355,6 +1524,9 @@ section {
 @media screen and (max-width: 767px) {
   p {
     font-size: 15px !important;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.4;
   }
 }
 .footer .container {

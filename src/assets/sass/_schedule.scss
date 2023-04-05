@@ -1,6 +1,7 @@
 @import "globals";
 @import "variables";
 @import "mixin";
+@import "breakpoint";
 
 .sect-schedule {
 	background-color: #fff;
@@ -76,6 +77,80 @@
 						width: 40px;
 						height: 40px;
 						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect-schedule {
+		.container {
+			max-width: 100% !important;
+			.title {
+				.text {
+					display: flex;
+					align-items: center;
+					margin-left: 0;
+					img {
+						margin-right: 10px;
+						width: 28px;
+						height: 20px;
+					}
+					h3 {
+						font-size: 30px;
+						line-height: 1.3;
+					}
+				}
+				.items-btn-checked {
+					.btn-checked {
+						margin-left: 7px;
+						.btn {
+							padding: 5px 7px;
+							font-weight: 600;
+							font-size: 12px;
+						}
+					}
+				}
+			}
+			.row {
+				.text-date {
+					justify-content: start !important;
+					li {
+						font-size: 15px;
+					}
+				}
+				margin-top: 50px;
+				.card-info {
+					padding: 15px;
+					border-radius: 5px;
+					margin: 5px 0 30px;
+					overflow-x: scroll;
+					h3 {
+						font-size: 18px;
+					}
+					p {
+					margin-bottom: 20px;
+						span {
+							font-size: 12px;
+							column-gap: 4px;
+							padding-right: 5px;
+							svg {
+								font-size: 22px;
+							}
+						}
+					}
+					.btns {
+						color: #363636;
+						font-size: 14px;
+					}
+					.img-person {
+						position: relative;
+						img {
+							width: 30px;
+							height: 30px;
+						}
 					}
 				}
 			}

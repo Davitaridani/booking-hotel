@@ -20,7 +20,7 @@ const About = () => {
 					<Col lg="6" sm="12" className="about-info d-flex align-items-center">
 						<div className="">
 							<div className="title w-75">
-								<h1>About Meetup Event</h1>
+								<h1>About <br className='d-block d-md-none' /> Meetup Event</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac sit. Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit amet, consectetur adipiscing sit quis dui lacus.</p>
 							</div>
 							<div className="info-event d-flex gap-5">
@@ -51,7 +51,7 @@ const About = () => {
 						</div>
 					</Col>
 
-					<Col lg="6" className='items-profile d-flex gap-3'>
+					<Col lg="6" sm="12" className='items-profile d-block d-md-flex gap-3'>
 						<div className="profile-about-1">
 							<img src={imgProfile1} alt="profile 1" className='' />
 							<img src={imgShape} alt="" />

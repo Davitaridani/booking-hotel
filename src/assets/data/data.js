@@ -239,8 +239,7 @@ export const eventSchedules = [
       { img: person7 },
       { img: person8 },
       { img: person9 },
-      { img: person10 },
-      { img: person11 },
+      { img: person15 },
     ],
   },
   {
@@ -251,6 +250,8 @@ export const eventSchedules = [
     dataPerson: [
       { img: person12 },
       { img: person13 },
+      { img: person10 },
+      { img: person11 },
       { img: person14 },
       { img: person15 },
     ],
@@ -270,6 +271,7 @@ export const eventSchedules = [
       { img: person13 },
       { img: person6 },
       { img: person9 },
+      { img: person15 },
     ],
   },
 ];
