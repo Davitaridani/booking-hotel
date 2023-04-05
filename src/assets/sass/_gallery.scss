@@ -1,6 +1,6 @@
 @import "globals";
 @import "variables";
-
+@import "breakpoint";
 
 .sect-gallery {
 	.container-fluid {
@@ -33,6 +33,33 @@
 			filter: blur(3px);
 			&:hover {
 				filter: blur(0);
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect-gallery {
+		padding-bottom:  50px !important;
+		.container-fluid {
+			.title	 {
+				margin-bottom: 50px;
+				.img-title-1 {
+					filter: blur(0);
+					left: 10px;
+					bottom: 0;
+					width: 40px;
+					height: 30px;
+				}
+				.img-title-2 {
+					right: 0;
+					top: 0;
+					width: 90px;
+					height: auto;
+				}
+				h3 {
+				font-size: 35px;
+				}
 			}
 		}
 	}

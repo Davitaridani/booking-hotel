@@ -1,5 +1,6 @@
 @import "globals";
 @import "variables";
+@import "breakpoint";
 
 .sect-sponsor {
 	background-color: #fff;
@@ -11,7 +12,7 @@
 				font-weight: 600;
 				margin-bottom: 10px;
 			}
-			width: 35%;
+			width: max-content;
 			margin: 0 auto 40px ;
 			border-bottom: 2px solid #d54b89;
 		}
@@ -35,6 +36,38 @@
 			&:hover {
 				background-color: #d54b89 !important;
 				color: #fff;
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect-sponsor {
+		.container {
+			.title {
+				h3 {
+					font-size: 30px;
+					margin-bottom: 10px;
+				}
+				max-width: max-content;
+				margin: 0 auto 40px ;
+				width: auto;
+			}
+			.row {
+				.img-logo {
+					display: flex;
+					img {
+						height: auto;
+						width: 100px;
+						object-fit: contain;
+						margin-bottom: 20px;
+					}
+				}
+			}
+			button {
+				padding: 6px 18px;
+				border-radius: 5px;
+				font-size: 15px;
 			}
 		}
 	}

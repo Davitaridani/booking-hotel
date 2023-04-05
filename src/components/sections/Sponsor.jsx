@@ -10,9 +10,9 @@ const Sponsor = () => {
 				</div>
 				<Row>
 					{dataSponsor.map((item, index) => (
-						<Col lg="3" md="4" sm="6" key={index} >
+						<Col lg="3" md="4" sm="3" key={index} className="" >
 							<div className="img-logo text-center" >
-								<img src={item.logo} alt="" />
+								<img src={item.logo} alt="" className="img-fluid" />
 							</div>
 						</Col>
 					))}

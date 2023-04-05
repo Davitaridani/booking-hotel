@@ -1,6 +1,7 @@
 @import "globals";
 @import "variables";
 @import "mixin";
+@import "breakpoint";
 
 .sect-vanue {
 	.container {
@@ -88,6 +89,75 @@
 					position: absolute;
 					bottom: 5vh;
 					right: 0;
+				}
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect-vanue {
+		.container {
+			.row {
+				.img-vanue-1 {
+					margin-bottom: 30px;
+					img:nth-child(1) {
+						margin-bottom: 30px;
+						display: flex;
+						margin: 0 auto;
+						&:hover {
+							transform:  scale(1.1);
+						}
+					}
+				}
+
+				.img-vanue-2 {
+					margin-bottom: 50px;
+					img:nth-child(1) {
+						margin-bottom: 30px;
+					}
+					img:nth-child(2) {
+						max-width: 90%;
+						margin: 0 auto;
+						display: flex;
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+				}
+				.items-text-vanue {
+					padding-left: 15px;
+					position: relative;
+					.title {
+						margin-bottom: 20px;
+						h1 {
+							font-size: 40px;
+							line-height: 1.2;
+						}
+					}
+					.desc {
+						h3 {
+							font-size: 18px;
+							margin-bottom: 20px;
+						}
+					}
+					.items-button {
+						column-gap: 10px;
+						svg {
+							font-size: 17px;
+						}
+						button {
+							padding: 7px 18px;
+							font-size: 15px !important;
+							gap: 5px;
+						}
+					}
+					display: flex;
+					align-items: center;
+					img {
+						bottom: 2vh;
+						right: 0;
+					}
 				}
 			}
 		}

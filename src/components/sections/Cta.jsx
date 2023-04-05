@@ -19,7 +19,7 @@ const Cta = () => {
 					</div>
 					<div className="btn-subscribe d-flex align-items-center">
 						<img src={imgCta2} alt="" />
-						<input type="email" className="form-control" placeholder="Enter your email address" />
+						<input type="email" className="form-control" placeholder="Enter your email" />
 						<button className="">Subscribe</button>
 					</div>
 				</div>

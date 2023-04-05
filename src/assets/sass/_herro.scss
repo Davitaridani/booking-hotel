@@ -65,12 +65,13 @@
 @include responsive(mobile) {
 	.herro-banner {
 		.container {
+			overflow: hidden;
 			.herro-text {
 				height: auto;
 				width: auto;
 				h1 {
-					font-size: 40px;
-					line-height: 1.4;
+					font-size: 45px;
+					line-height: 1.3;
 					margin-bottom: 20px;
 				}
 				.date {

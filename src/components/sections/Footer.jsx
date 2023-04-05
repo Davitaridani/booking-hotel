@@ -26,7 +26,7 @@ const Footer = () => {
 					</Col>
 
 					{footerLinks.map((item, index) => (
-						<Col lg="2" className="item-link">
+						<Col lg="2" sm="6" className="item-link">
 							<div className="title" key={index}>
 								<h3>{item.title}</h3>
 								<ul>

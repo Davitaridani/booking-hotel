@@ -1,6 +1,6 @@
 @import "globals";
 @import "variables";
-
+@import "breakpoint";
 
 .sect-speakers {
 	.container {
@@ -56,6 +56,62 @@
 					color: #fff;
 					border-radius: 5px;
 					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect-speakers {
+		.container {
+			.row {
+				.items-speakers {
+					margin-bottom: 40px;
+					img {
+						margin: 0 auto;
+						display: flex;
+						border-top-right-radius: 20px;
+						border-top-left-radius: 20px;
+						max-width: 90%;
+					}
+					.info-speakers {
+						bottom: 20px;
+						left: 45px;
+						.icon-sosmed {
+							gap: 10px !important;
+							img {
+								margin: 5px 0 0;
+							}
+						}
+						h3 {
+							font-size: 18px;
+						}
+						p {
+							font-size: 14px  !important;
+							margin-bottom: 5px;
+						}
+					}
+				}
+				.info-text-speakers {
+					padding-top: 20px;
+					margin-left: 10px;
+					img {
+						left: auto;
+						right: 0;
+					}
+					h3 {
+						font-size: 40px;
+						line-height: 1.2;
+						margin-bottom: 20px;
+					}
+					p {
+						margin-bottom: 30px;
+					}
+					button {
+						padding: 7px 18px;
+						font-size: 14px;
+					}
 				}
 			}
 		}
