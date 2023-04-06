@@ -71,7 +71,7 @@
 
 @include responsive(mobile) {
 	.herro-banner {
-		padding-top: 40px !important;
+		padding-top: 90px !important;
 		.container {
 			overflow: hidden;
 			.herro-text {
@@ -80,7 +80,7 @@
 				h1 {
 					font-size: 50px;
 					line-height: 1.3;
-					height: 150px;
+					height: 130px;
 					margin-bottom: 20px;
 				}
 				.date {

@@ -3,7 +3,7 @@ import { dataSponsor } from "../../assets/data/data";
 
 const Sponsor = () => {
 	return (
-		<section className="sect-sponsor">
+		<section className="sect-sponsor" id="sponsors">
 			<Container>
 				<div className="title text-center">
 					<h3>Our Meetup Sponsor</h3>

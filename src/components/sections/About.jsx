@@ -12,20 +12,20 @@ import imgSyrcle from "../../assets/img/syrcle.png";
 
 const About = () => {
 	return (
-		<section className="sect-about">
+		<section className="sect-about" id="about">
 
 			<Container>
-				<img src={imgSyrcle} alt="Syrcle" className='animate-spin ' />
+				<img src={imgSyrcle} alt="Syrcle" className='animate-spin' />
 				<Row>
 					<Col lg="6" sm="12" className="about-info d-flex align-items-center">
 						<div className="">
 							<div className="title w-75">
-								<h1>About <br className='d-block d-md-none' /> Meetup Event</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac sit. Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit amet, consectetur adipiscing sit quis dui lacus.</p>
+								<h1 data-aos="fade-right" data-aos-duration="1500">About <br className='d-block d-md-none' /> Meetup Event</h1>
+								<p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac sit. Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit amet, consectetur adipiscing sit quis dui lacus.</p>
 							</div>
 							<div className="info-event d-flex gap-5">
-								<div className="items-event d-flex align-items-center gap-2">
-									<div className='icon animate-pulse'>
+								<div className="items-event d-flex align-items-center gap-2" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="250">
+									<div className='icon animate-pulse' >
 										<MdOutlineDateRange />
 									</div>
 									<div className="events">
@@ -33,7 +33,7 @@ const About = () => {
 										<p>Friday to Sunday, <br /> 1-3 July 2022</p>
 									</div>
 								</div>
-								<div className="items-event  d-flex align-items-center gap-2">
+								<div className="items-event  d-flex align-items-center gap-2" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="250">
 									<div className='icon animate-pulse'>
 										<SlLocationPin />
 									</div>

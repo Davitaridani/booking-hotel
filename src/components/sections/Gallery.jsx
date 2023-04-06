@@ -7,7 +7,7 @@ import imgShape2 from "../../assets/img/shape2.png";
 const Gallery = () => {
 
 	return (
-		<section className="sect-gallery">
+		<section className="sect-gallery" id="gallery">
 			<Container fluid>
 				<div className="title text-center">
 					<img src={imgShape2} alt="" className="img-title-2 " />

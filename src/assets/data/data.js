@@ -61,9 +61,19 @@ import person14 from "../../assets/img/person/person-14.jpg";
 import person15 from "../../assets/img/person/person-15.jpg";
 
 export const dataMeetLearn = [
-  { id: "01", icon: <FaMicrophone />, title: "40+ Speaker" },
-  { id: "02", icon: <MdOutlineMonitor />, title: "60+ Session" },
-  { id: "03", icon: <MdOutlineDateRange />, title: "3 Days Event" },
+  { id: "01", icon: <FaMicrophone />, title: "40+ Speaker", aosDellay: "100" },
+  {
+    id: "02",
+    icon: <MdOutlineMonitor />,
+    title: "60+ Session",
+    aosDellay: "250",
+  },
+  {
+    id: "03",
+    icon: <MdOutlineDateRange />,
+    title: "3 Days Event",
+    aosDellay: "350",
+  },
 ];
 
 export const dataSpeakers = [

@@ -8,18 +8,19 @@ import { CgMenuRight } from "react-icons/cg";
 
 const NavbarCompt = () => {
   const itemLinks = [
-    { path: "/", display: "Home" },
-    { path: "/about", display: "About" },
-    { path: "/schedule", display: "Schedule" },
-    { path: "/speakers", display: "Speakers" },
-    { path: "/sponsors", display: "Sponsors" },
-    { path: "/vanue", display: "Vanue" },
+    { path: "#home", display: "Home" },
+    { path: "#about", display: "About" },
+    { path: "#schedule", display: "Schedule" },
+    { path: "#speakers", display: "Speakers" },
+    { path: "#sponsors", display: "Sponsors" },
+    { path: "#vanue", display: "Vanue" },
+    { path: "#gallery", display: "Gallery" },
   ];
 
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <nav className="navbar bg-transparent">
+    <nav className="navbar bg-transparent fixed-top">
       <Container>
         <div className="navbar-brand">
           <Link to="/">
@@ -34,7 +35,7 @@ const NavbarCompt = () => {
           >
             {itemLinks.map((item, index) => (
               <li key={index}>
-                <Link to={item.path}>{item.display}</Link>
+                <a href={item.path}>{item.display}</a>
               </li>
             ))}
           </ul>

@@ -8,7 +8,7 @@ import shape from "../../assets/img/shape-gallery.png";
 const Schedule = () => {
 
 	return (
-		<section className='sect-schedule'>
+		<section className='sect-schedule' id="schedule">
 			<Container>
 				<div className="title d-flex justify-content-between align-items-center">
 					<div className="text">

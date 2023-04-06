@@ -5,7 +5,7 @@ import imgCta3 from "../../assets/img/img-cta3.png";
 
 const Cta = () => {
 	return (
-		<section className="sect-cta">
+		<section className="sect-cta" id="cta">
 			<Container>
 				<div className="d-flex align-items-center justify-content-between cta">
 					<div className="cta-3">

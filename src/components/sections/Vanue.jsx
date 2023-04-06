@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import imgVanue1 from "../../assets/img/img-vanue1.jpg";
 import imgVanue2 from "../../assets/img/img-vanue2.jpg";
@@ -7,14 +7,20 @@ import imgCircle from "../../assets/img/circle.png";
 import imgShape from "../../assets/img/shape3.png";
 import { FiArrowRight } from "react-icons/fi";
 import { FaBoxes } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Vanue = () => {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
-		<section className="sect-vanue">
+		<section className="sect-vanue" id="vanue">
 			<Container>
 				<Row className="">
 					<Col lg="3" md="3" sm="12" className="img-vanue-1 ">
-						<img src={imgVanue1} alt="" className='img-fluid' />
+						<img src={imgVanue1} alt="" className='img-fluid' data-aos="fade-down-right" />
 						<img src={imgShape} alt="" className='img-fluid' />
 					</Col>
 					<Col lg="3" md="3" sm="12" className="img-vanue-2">

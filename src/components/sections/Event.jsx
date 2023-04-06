@@ -4,7 +4,7 @@ import Card from "../UI/Card";
 
 const Event = () => {
 	return (
-		<section className="sect-event">
+		<section className="sect-event" id="event">
 			<Container>
 				<div className="text-center title">
 					<p>Why you should Join</p>
