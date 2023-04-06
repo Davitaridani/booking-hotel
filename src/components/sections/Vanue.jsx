@@ -20,19 +20,24 @@ const Vanue = () => {
 			<Container>
 				<Row className="">
 					<Col lg="3" md="3" sm="12" className="img-vanue-1 ">
-						<img src={imgVanue1} alt="" className='img-fluid' data-aos="fade-down-right" />
+						<div data-aos="fade-down-right" data-aos-duration="2000" data-aos-offset="300">
+
+							<img src={imgVanue1} alt="" className='img-fluid' />
+						</div>
 						<img src={imgShape} alt="" className='img-fluid' />
 					</Col>
 					<Col lg="3" md="3" sm="12" className="img-vanue-2">
 						<img src={imgArrow} alt="" className='animate-right-back' />
-						<img src={imgVanue2} alt="" />
+						<div data-aos="fade-down-right" data-aos-duration="2000" data-aos-offset="300" data-aos-delay="300">
+							<img src={imgVanue2} alt="" />
+						</div>
 					</Col>
 					<Col lg="6" md="6" sm="12" className='items-text-vanue'>
 						<div>
 							<div className="title">
-								<h1>Explore Meetup Venue</h1>
+								<h1 data-aos="fade-left" data-aos-delay="300" data-aos-duration="2000">Explore Meetup Venue</h1>
 							</div>
-							<div className="desc">
+							<div className="desc" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">
 								<h3>Bangabandhu International Conference Center (BICC)</h3>
 								<p>Bangabandhu International Conference Center (BICC) is the only multi-purpose convention facility in the country, having 17 (seventeen) venues for holding small to large scale events,</p>
 							</div>

@@ -1148,6 +1148,12 @@ section {
     -webkit-animation: arrow-up 5s linear infinite;
             animation: arrow-up 5s linear infinite;
   }
+  .sect-meet-leard .container .img-arrow-up img {
+    left: -30px;
+    bottom: 52px;
+    position: absolute;
+    transform: rotate(-90deg);
+  }
   @-webkit-keyframes arrow-up {
     0% {
       transform: translateY(0);
