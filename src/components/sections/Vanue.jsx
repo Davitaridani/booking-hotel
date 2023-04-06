@@ -18,7 +18,7 @@ const Vanue = () => {
 						<img src={imgShape} alt="" className='img-fluid' />
 					</Col>
 					<Col lg="3" md="3" sm="12" className="img-vanue-2">
-						<img src={imgArrow} alt="" />
+						<img src={imgArrow} alt="" className='animate-right-back' />
 						<img src={imgVanue2} alt="" />
 					</Col>
 					<Col lg="6" md="6" sm="12" className='items-text-vanue'>

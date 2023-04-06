@@ -9,7 +9,9 @@
 				width: 220px;
 			}
 		}
-		ul {
+		.nav-links {
+			margin-left: auto;
+			display: flex;
 			li {
 				transition: all .5s ease-in;
 				padding: 0 30px 0 0;
@@ -28,38 +30,59 @@
 		.btn-ticket {
 			padding-left: 20px;
 		}
+		.navbar-item-menu {
+			display: none;
+		}
 	}
 }
 
 @include responsive(mobile) {
 	.navbar {
 		.container {
+			overflow: hidden;
 			a {
 				img {
-					width: 220px;
+					width: 180px;
 				}
 			}
-			ul {
+			.nav-links {
+				display: none;
+			}
+			.nav-links-sidebar {
+					margin-left: auto;
+					display: block;
+					position: absolute;
+					right: 29px;
+					top: 64px;
+					background: linear-gradient(135deg, #69c0b4 0%, #736EFE 100%);
+					padding: 15px 20px;
+					width: 135px;
+					border-radius: 8px;
 				li {
-					display: none;
+					padding: 3px 0;
 					transition: all .5s ease-in;
-					padding: 0 30px 0 0;
+					width: 100%;
+					display: block;
 					a {
+						font-weight: 500;
 						color: #fff;
-						font-weight: 400;
-						font-size: 16px;
-						letter-spacing: 1px;
+						display: block;
 						transition: all .3s ease-in-out;
-						&:hover {
-							color: $colorPink;
-						}
 					}
 				}
 			}
 			.btn-ticket {
-					display: none;
-
+				display: none;
 				padding-left: 20px;
+			}
+		.navbar-item-menu {
+			display: block;
+			position: absolute;
+			right: 25px;
+			padding-right: 0;
+			top: 10px;
+			font-size: 27px;
+			color: #fff;
 			}
 		}
 	}

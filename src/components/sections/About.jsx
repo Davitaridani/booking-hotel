@@ -15,7 +15,7 @@ const About = () => {
 		<section className="sect-about">
 
 			<Container>
-				<img src={imgSyrcle} alt="Syrcle" />
+				<img src={imgSyrcle} alt="Syrcle" className='animate-spin ' />
 				<Row>
 					<Col lg="6" sm="12" className="about-info d-flex align-items-center">
 						<div className="">
@@ -25,18 +25,18 @@ const About = () => {
 							</div>
 							<div className="info-event d-flex gap-5">
 								<div className="items-event d-flex align-items-center gap-2">
-									<span>
+									<div className='icon animate-pulse'>
 										<MdOutlineDateRange />
-									</span>
+									</div>
 									<div className="events">
 										<h3>Event</h3>
 										<p>Friday to Sunday, <br /> 1-3 July 2022</p>
 									</div>
 								</div>
 								<div className="items-event  d-flex align-items-center gap-2">
-									<span>
+									<div className='icon animate-pulse'>
 										<SlLocationPin />
-									</span>
+									</div>
 									<div className="events">
 										<h3>Location</h3>
 										<p>Bangabandhu International Conference Center, <br />
@@ -53,12 +53,12 @@ const About = () => {
 
 					<Col lg="6" sm="12" className='items-profile d-block d-md-flex gap-3'>
 						<div className="profile-about-1">
-							<img src={imgProfile1} alt="profile 1" className='' />
+							<img src={imgProfile1} alt="profile 1" className='animate-up-1' />
 							<img src={imgShape} alt="" />
 						</div>
 						<div className="profile-about-2">
 							<img src={imgShape2} alt="shape" className='float-end mb-4' />
-							<img src={imgProfile2} alt="profile 1" className='' />
+							<img src={imgProfile2} alt="profile 1" className='animate-up-2' />
 						</div>
 					</Col>
 				</Row>

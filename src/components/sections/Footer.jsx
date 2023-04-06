@@ -19,7 +19,7 @@ const Footer = () => {
 						<div className="icon d-flex align-items-center" >
 							{iconFooter.map(item => (
 								<a href={item.link} target="_blank" rel="noreferrer">
-									<img src={item.icon} alt="" className="" key={item.id} />
+									<img src={item.icon} alt="" className="animate-pulse-2" key={item.id} />
 								</a>
 							))}
 						</div>

@@ -12,7 +12,7 @@ const Schedule = () => {
 			<Container>
 				<div className="title d-flex justify-content-between align-items-center">
 					<div className="text">
-						<img src={shape} alt="" />
+						<img src={shape} alt="" className='animate-spin' />
 						<h3>Event Schedules</h3>
 					</div>
 					<div className="items-btn-checked d-flex">

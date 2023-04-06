@@ -10,9 +10,9 @@ const Gallery = () => {
 		<section className="sect-gallery">
 			<Container fluid>
 				<div className="title text-center">
-					<img src={imgShape2} alt="" className="img-title-2" />
+					<img src={imgShape2} alt="" className="img-title-2 " />
 					<h3>Photo Gallery</h3>
-					<img src={imgShape} alt="" className="img-title-1" />
+					<img src={imgShape} alt="" className="animate-spin img-title-1" />
 				</div>
 				<ResponsiveMasonry
 					columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 5 }}>

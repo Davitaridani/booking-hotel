@@ -11,17 +11,24 @@
 			width: 920px;
 			margin: 0 auto;
 			text-align: center;
-			h1 {
-				color: #fff;
-				background: linear-gradient(135deg, #5EFCE8 0%, #736EFE 100%);
-				font-size: 75px;
-				letter-spacing: -0.03em;
-				font-weight: 700;
-				line-height: 115px;
-				background-clip: text;
-				-webkit-text-fill-color: transparent;
-				margin-bottom: 5px;
-			}
+				h1 {
+					color: #fff;
+					background: linear-gradient(135deg, #5EFCE8 0%, #736EFE 100%);
+					font-size: 75px;
+					letter-spacing: -0.03em;
+					font-weight: 700;
+					line-height: 115px;
+					background-clip: text;
+					-webkit-text-fill-color: transparent;
+					margin-bottom: 10px;
+					.Typewriter {
+						.Typewriter__cursor {
+							background-color: #736EFE;
+							margin-left: 15px;
+							display: contents;
+						}
+					}
+				}
 			p {
 				color: $secondary;
 				margin-bottom: 25px;
@@ -64,14 +71,16 @@
 
 @include responsive(mobile) {
 	.herro-banner {
+		padding-top: 40px !important;
 		.container {
 			overflow: hidden;
 			.herro-text {
 				height: auto;
 				width: auto;
 				h1 {
-					font-size: 45px;
+					font-size: 50px;
 					line-height: 1.3;
+					height: 150px;
 					margin-bottom: 20px;
 				}
 				.date {

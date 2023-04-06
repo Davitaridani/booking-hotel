@@ -25,7 +25,6 @@ p {
 	letter-spacing: 1px;
 }
 
-
 ul {
 	list-style: none;
 	padding-left: 0;
@@ -53,4 +52,84 @@ section {
 	h1,h2,h3,h4 {
 		line-height: 1.4;
 	}
+}
+
+.animate-bounce {
+  animation: bounce 4s ease infinite;
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-25px);}
+	60% {transform: translateY(-15px);}
+}
+
+.animate-up {
+	animation: bounce-2 5s linear infinite;
+}
+@keyframes bounce-2 {
+	0%   { transform: translateY(0); }
+	50%  { transform: translateY(-50px); }
+	100% { transform: translateY(0); }
+}
+
+.animate-right-back {
+	animation: right-back 5s linear infinite;
+}
+@keyframes right-back {
+	0%   { transform: translateX(0); }
+	50%  { transform: translateX(-130px); }
+	100% { transform: translateX(0); }
+}
+
+.animate-spin {
+  animation: spin 6s infinite linear;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(720deg); }
+}
+
+.animate-pulse {
+  animation: pulse 3s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.7); }
+  to { transform: scale(1); }
+}
+
+.animate-pulse-2 {
+  animation: pulse 1.5s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.9); }
+  to { transform: scale(1.1); }
+}
+
+.animate-up-1 {
+	animation: up-1 5s linear infinite;
+}
+@keyframes up-1 {
+		0%   { transform: translateY(0); }
+		50%  { transform: translateY(-30px); }
+		100% { transform: translateY(0); }
+}
+
+.animate-up-2 {
+	animation: up-2 5s linear infinite;
+}
+@keyframes up-2 {
+		0%   { transform: translateY(0); }
+		50%  { transform: translateY(30px); }
+		100% { transform: translateY(); }
+}
+
+.animate-hithere {
+  animation: hithere 3s ease infinite;
+}
+@keyframes hithere {
+  30% { transform: scale(1.1); }
+  40%, 60% { transform: rotate(-20deg) scale(1.1); }
+  50% { transform: rotate(20deg) scale(1.1); }
+  70% { transform: rotate(0deg) scale(1.1); }
+  100% { transform: scale(1); }
 }
